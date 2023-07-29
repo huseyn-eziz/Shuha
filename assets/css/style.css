@@ -209,3 +209,52 @@ span {
   font-weight: 300;
   color: var(--colorbg);
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 15px;
+  position: relative;
+}
+
+.cards .card {
+  width: 24%;
+  box-shadow: rgba(0, 0, 0, 0.5)
+}
+
+.cards .card img {
+  width: 100%;
+  height: 170px;
+}
+
+.cards .card:nth-child(1) {
+  position: relative;
+  top: 30px;
+}
+
+.cards .card:nth-child(3),
+.cards .card:nth-child(6) {
+  position: relative;
+  top: -60px;
+}
+
+.cards .card:nth-child(4),
+.cards .card:nth-child(7) {
+  position: relative;
+  top: -90px;
+}
+
+.cards .card h2 {
+  color: #b90470;
+  margin-block: 20px;
+  font-size: 20px;
+}
+
+.cards .card h2,p {
+  margin-left: 10px;
+}
+.cards .card p{
+  font-size: 14px;
+}
